@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Emerson Ferreira</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <div class="language-selector">
+                <button onclick="changeLanguage('pt')">PT</button>
+                <button onclick="changeLanguage('en')">EN</button>
+                <button onclick="changeLanguage('es')">ES</button>
+            </div>
+            
+            <h1>EMERSON FERREIRA DA SILVA</h1>
+            <p class="subtitle">Desenvolvedor Java Full Stack</p>
+        </header>
+
+        <main>
+            <!-- Seções colapsáveis -->
+            <section class="resume-section" onclick="toggleSection('personal')">
+                <h2><i class="fas fa-user"></i> <span data-lang="pt">Dados Pessoais</span><span data-lang="en">Personal Information</span><span data-lang="es">Datos Personales</span></h2>
+                <div class="section-content" id="personal-content">
+                    <p><i class="fas fa-map-marker-alt"></i> Vila Graciosa – 03295000 – São Paulo, SP</p>
+                    <p><i class="fas fa-phone"></i> +55 11 945137867</p>
+                    <p><i class="fas fa-envelope"></i> eme.ferreira.silva@gmail.com</p>
+                </div>
+            </section>
+
+            <section class="resume-section" onclick="toggleSection('experience')">
+                <h2><i class="fas fa-briefcase"></i> <span data-lang="pt">Experiência Profissional</span><span data-lang="en">Professional Experience</span><span data-lang="es">Experiencia Profesional</span></h2>
+                <div class="section-content" id="experience-content">
+                    <!-- Conteúdo da experiência -->
+                    <div class="job">
+                        <div class="job-header">
+                            <h3 data-lang="pt">Desenvolvedor Java – Angular</h3>
+                            <h3 data-lang="en">Java Developer – Angular</h3>
+                            <h3 data-lang="es">Desarrollador Java – Angular</h3>
+                            <span class="company">B3 – Bolsa Brasil Balcão</span>
+                            <span class="date" data-lang="pt">06/2023 - Atual</span>
+                            <span class="date" data-lang="en">06/2023 - Present</span>
+                            <span class="date" data-lang="es">06/2023 - Actualidad</span>
+                        </div>
+                        <ul class="job-description">
+                            <li>Java 17 – SpringBoot</li>
+                            <li data-lang="pt">Microserviços</li>
+                            <li data-lang="en">Microservices</li>
+                            <li data-lang="es">Microservicios</li>
+                            <li>Angular 9</li>
+                            <li data-lang="pt">Versionamento de Código GIT</li>
+                            <li data-lang="en">Code Versioning with GIT</li>
+                            <li data-lang="es">Control de versiones con GIT</li>
+                            <!-- Adicione mais itens conforme necessário -->
+                        </ul>
+                    </div>
+                    <!-- Adicione outras experiências -->
+                </div>
+            </section>
+
+            <!-- Adicione outras seções (educação, idiomas, etc.) seguindo o mesmo padrão -->
+            
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

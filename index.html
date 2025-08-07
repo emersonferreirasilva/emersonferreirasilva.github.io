@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerson Ferreira - Desenvolvedor Java</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="home-container">
+        <div class="language-selector">
+            <button onclick="changeLanguage('pt')">PT</button>
+            <button onclick="changeLanguage('en')">EN</button>
+            <button onclick="changeLanguage('es')">ES</button>
+        </div>
+        
+        <div class="home-content">
+            <img src="#" alt="" class="computer-icon">
+            <h1>EMERSON FERREIRA DA SILVA</h1>
+            <p class="subtitle">Desenvolvedor Java Full Stack</p>
+            <a href="resume.html" class="enter-button">Ver Currículo</a>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+            // Salvar preferência no localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+        
+        // Carregar idioma preferido
+        const savedLang = localStorage.getItem('preferredLanguage') || 'pt';
+        document.documentElement.lang = savedLang;
+    </script>
+</body>
+</html>
